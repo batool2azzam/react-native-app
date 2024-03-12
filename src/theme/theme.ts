@@ -45,22 +45,25 @@ interface Color {
   primaryWhiteHex: string;
   primaryBlackRGBA: string;
   secondaryBlackRGBA: string;
+  primaryBlackHexa:string;
 }
 
 export const COLORS: Color = {
-  primaryRedHex: '#DC3535',
-  primaryOrangeHex: '#D17842',
-  primaryBlackHex: '#0C0F14',
-  primaryDarkGreyHex: '#141921',
-  secondaryDarkGreyHex: '#21262E',
-  primaryGreyHex: '#252A32',
-  secondaryGreyHex: '#252A32',
-  primaryLightGreyHex: '#52555A',
-  secondaryLightGreyHex: '#AEAEAE',
-  primaryWhiteHex: '#FFFFFF',
-  primaryBlackRGBA: 'rgba(12,15,20,0.5)',
-  secondaryBlackRGBA: 'rgba(0,0,0,0.7)',
+  primaryRedHex: '#CC3333',
+  primaryOrangeHex: '#CC7733',
+  primaryBlackHex: '#0C0C0C',
+  primaryBlackHexa: 'rgba(18, 18, 18, 0.5)',
+  primaryDarkGreyHex: '#121212',
+  secondaryDarkGreyHex: '#1A1A1A',
+  primaryGreyHex: '#1E1E1E',
+  secondaryGreyHex: '#1E1E1E',
+  primaryLightGreyHex: '#4D4D4D',
+  secondaryLightGreyHex: '#A0A0A0',
+  primaryWhiteHex: '#F5F5F5',
+  primaryBlackRGBA: 'rgba(12, 12, 12, 0.5)',
+  secondaryBlackRGBA: 'rgba(0, 0, 0, 0.7)',
 };
+
 
 interface FontFamily {
   poppins_black: string;
