@@ -59,7 +59,7 @@ const HomeScreen = () => {
   const [sortedCoffee, setSortedCoffee] = useState(
     getCoffeeList(categoryIndex.category, CoffeeList),
   );
-  console.log(sortedCoffee.length);
+  // console.log(sortedCoffee.length);
   const tabBarHeight = useBottomTabBarHeight();
   return (
     <View style={styles.ScreenContainer}>
