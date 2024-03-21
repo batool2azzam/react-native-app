@@ -22,7 +22,7 @@ const TabNavigator = () => {
         tabBarBackground: () => (
           <BlurView
             overlayColor=""
-            blurAmount={15}
+            blurAmount={10}
             style={styles.BlurViewStyles}
           />
         ),

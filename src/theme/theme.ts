@@ -45,13 +45,13 @@ interface Color {
   primaryWhiteHex: string;
   primaryBlackRGBA: string;
   secondaryBlackRGBA: string;
-  primaryBlackHexa:string;
+  primaryBlackHexa: string;
 }
 
 export const COLORS: Color = {
   primaryRedHex: '#CC3333',
   primaryOrangeHex: '#CC7733',
-  primaryBlackHex: '#0C0C0C',
+  primaryBlackHex: '#0E0E0E',
   primaryBlackHexa: 'rgba(18, 18, 18, 0.5)',
   primaryDarkGreyHex: '#121212',
   secondaryDarkGreyHex: '#1A1A1A',

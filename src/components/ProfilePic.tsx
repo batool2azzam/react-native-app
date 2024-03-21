@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, Image} from 'react-native';
-import {COLORS, SPACING} from '../theme/theme';
+import {BORDERRADIUS, COLORS, SPACING} from '../theme/theme';
 
 const ProfilePic = () => {
   return (
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   ImageContainer: {
     height: SPACING.space_36,
     width: SPACING.space_36,
-    borderRadius: SPACING.space_12,
+    borderRadius: BORDERRADIUS.radius_10,
     borderWidth: 2,
     borderColor: COLORS.secondaryDarkGreyHex,
     alignItems: 'center',
