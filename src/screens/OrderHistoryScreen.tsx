@@ -19,9 +19,9 @@ import {useStore} from '../store/store';
 import CardOrder from '../components/CardOrder';
 import EmptyListAnimation from '../components/EmptyListAnimation';
 import {useBottomTabBarHeight} from '@react-navigation/bottom-tabs';
+import PopUpAnimation from '../components/PopUpAnimation';
 
 const OrderHistory = () => {
-  const CartListPrice = useStore((state: any) => state.CartPrice);
   const OrderHistoryList = useStore((state: any) => state.OrderHistoryList);
   const [showAnimation, setShowAnimation] = useState(false);
   const tabBarHeight = useBottomTabBarHeight();
@@ -35,8 +35,17 @@ const OrderHistory = () => {
     }, 2000);
   };
   return (
-    <View style={styles.Container}>
+    <View style={[styles.Container, {paddingBottom: tabBarHeight}]}>
       <StatusBar backgroundColor={COLORS.primaryBlackHex} />
+      {showAnimation ? (
+        <PopUpAnimation
+          style={styles.LottieAnimation}
+          source={require('../lottie/download.json')}
+        />
+      ) : (
+        <></>
+      )}
+
       <ScrollView
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={styles.ScrollStyle}>
@@ -77,7 +86,6 @@ const styles = StyleSheet.create({
   Container: {
     backgroundColor: COLORS.primaryBlackHex,
     flex: 1,
-    paddingBottom: SPACING.space_32 * 2,
   },
   ScrollStyle: {
     flexGrow: 1,
@@ -97,6 +105,9 @@ const styles = StyleSheet.create({
     fontFamily: FONTFAMILY.poppins_semibold,
     fontSize: FONTSIZE.size_18,
     color: COLORS.primaryWhiteHex,
+  },
+  LottieAnimation: {
+    height: 250,
   },
 });
 export default OrderHistory;
